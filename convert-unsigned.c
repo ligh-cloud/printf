@@ -7,12 +7,12 @@
     *
     * Return: Casted value of num
     */
- 1 long int convert_size_unsgnd(unsigned long int num, int size)
- 1 {
- 1         if (size == S_LONG)
- 1                 return (num);
- 1         else if (size == S_SHORT)
- 1                 return ((unsigned short)num);
- 1
- 1         return ((unsigned int)num);
- 1 }
+  long int convert_size_unsgnd(unsigned long int num, int size)
+  {
+          if (size == S_LONG)
+                  return (num);
+          else if (size == S_SHORT)
+                  return ((unsigned short)num);
+ 
+          return ((unsigned int)num);
+ }
